@@ -1,0 +1,151 @@
+/* ===========================
+   Hakim AI Academy
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --primary:#4F46E5;
+    --secondary:#7C3AED;
+    --accent:#06B6D4;
+
+    --bg:#F7F8FC;
+    --card:#FFFFFF;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --radius:22px;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+Loader
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.spinner{
+
+    width:55px;
+
+    height:55px;
+
+    border:5px solid #ddd;
+
+    border-top:5px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ===========================
+Header
+=========================== */
+
+header{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(18px);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+z-index:100;
+
+}
+
+.logo{
+
+font-size:22px;
+
+font-weight:700;
+
+color:var(--primary);
+
+display:flex;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+nav{
