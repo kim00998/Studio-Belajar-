@@ -1,557 +1,64 @@
-/* ===========================
+/* ==========================================
    Hakim AI Academy
-   style.css
-=========================== */
+   Style.css - Part 1
+========================================== */
+
+/* Reset */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
     scroll-behavior:smooth;
 }
 
-:root{
-
-    --primary:#4F46E5;
-    --secondary:#7C3AED;
-    --accent:#06B6D4;
-
-    --bg:#F7F8FC;
-    --card:#FFFFFF;
-
-    --text:#1F2937;
-    --text-light:#6B7280;
-
-    --shadow:0 15px 35px rgba(0,0,0,.08);
-
-    --radius:22px;
-
-}
-
 body{
-
     font-family:'Poppins',sans-serif;
-
-    background:var(--bg);
-
-    color:var(--text);
-
+    background:#f5f7fb;
+    color:#1f2937;
     line-height:1.7;
-
 }
 
-/* Scrollbar */
+/* Container */
 
-::-webkit-scrollbar{
-
-    width:8px;
-
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-::-webkit-scrollbar-thumb{
+/* Header */
 
-    background:var(--primary);
-
-    border-radius:20px;
-
-}
-
-/* ===========================
-Loader
-=========================== */
-
-#loader{
-
+.header{
     position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    z-index:1000;
+}
 
-    inset:0;
-
-    background:white;
-
+.header .container{
     display:flex;
-
-    justify-content:center;
-
+    justify-content:space-between;
     align-items:center;
-
-    z-index:9999;
-
+    height:80px;
 }
 
-.spinner{
-
-    width:55px;
-
-    height:55px;
-
-    border:5px solid #ddd;
-
-    border-top:5px solid var(--primary);
-
-    border-radius:50%;
-
-    animation:spin 1s linear infinite;
-
-}
-
-@keyframes spin{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-/* ===========================
-Header
-=========================== */
-
-header{
-
-position:sticky;
-
-top:0;
-
-background:rgba(255,255,255,.92);
-
-backdrop-filter:blur(18px);
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 8%;
-
-box-shadow:0 2px 12px rgba(0,0,0,.05);
-
-z-index:100;
-
-}
+/* Logo */
 
 .logo{
-
-font-size:22px;
-
-font-weight:700;
-
-color:var(--primary);
-
-display:flex;
-
-gap:10px;
-
-align-items:center;
-
+    font-size:24px;
+    font-weight:700;
+    color:#4f46e5;
 }
+
+/* Menu */
 
 nav{
-
-/* ===========================
-   Card Materi
-=========================== */
-
-.card{
-
-    background:var(--card);
-
-    border-radius:var(--radius);
-
-    padding:30px;
-
-    margin-bottom:25px;
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.card h3{
-
-    font-size:24px;
-
-    margin-bottom:12px;
-
-}
-
-.card p{
-
-    color:var(--text-light);
-
-    margin-bottom:20px;
-
-}
-
-.watch-btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    text-decoration:none;
-
-    color:#fff;
-
-    background:#FF4D4F;
-
-    padding:14px 24px;
-
-    border-radius:999px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.watch-btn:hover{
-
-    background:#E53935;
-
-    transform:scale(1.05);
-
-}
-
-/* ===========================
-   Persiapan Awal
-=========================== */
-
-.prepare-card{
-
-    display:grid;
-
-    gap:18px;
-
-}
-
-.prepare-card a{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    background:var(--card);
-
-    padding:22px;
-
-    border-radius:18px;
-
-    text-decoration:none;
-
-    color:var(--text);
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
-
-    font-weight:600;
-
-}
-
-.prepare-card a:hover{
-
-    transform:translateX(8px);
-
-    color:var(--primary);
-
-}
-
-/* ===========================
-   Tugas
-=========================== */
-
-.task-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-
-}
-
-.task-card{
-
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-
-    color:#fff;
-
-    border-radius:25px;
-
-    padding:30px;
-
-    text-align:center;
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-
-}
-
-.task-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.task-card h3{
-
-    font-size:26px;
-
-    margin-bottom:12px;
-
-}
-
-.task-card p{
-
-    margin-bottom:22px;
-
-    opacity:.95;
-
-}
-
-.task-card a{
-
-    display:inline-block;
-
-    text-decoration:none;
-
-    background:#fff;
-
-    color:var(--primary);
-
-    padding:12px 24px;
-
-    border-radius:999px;
-
-    font-weight:600;
-
-}
-
-/* ===========================
-   Download
-=========================== */
-
-.download-card{
-
-    display:grid;
-
-    gap:18px;
-
-}
-
-.download-card a{
-
-    background:var(--card);
-
-    padding:22px;
-
-    border-radius:18px;
-
-    text-decoration:none;
-
-    color:var(--text);
-
-    font-weight:600;
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
-
-}
-
-.download-card a:hover{
-
-    background:var(--primary);
-
-    color:#fff;
-
-}
-
-/* ===========================
-   Footer
-=========================== */
-
-footer{
-
-    margin-top:70px;
-
-    padding:50px 8%;
-
-    background:#111827;
-
-    color:#fff;
-
-    text-align:center;
-
-}
-
-footer h3{
-
-    font-size:28px;
-
-    margin-bottom:12px;
-
-}
-
-footer p{
-
-    opacity:.8;
-
-    margin-top:8px;
-
-}
-
-/* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:768px){
-
-    header{
-
-        flex-direction:column;
-
-        gap:15px;
-
-        padding:18px;
-
-    }
-
-    nav{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:15px;
-
-    }
-
-    .hero{
-
-        padding:70px 20px;
-
-    }
-
-    .hero h1{
-
-        font-size:36px;
-
-    }
-
-    .hero p{
-
-        font-size:16px;
-
-    }
-
-    .section-title h2{
-
-        font-size:28px;
-
-    }
-
-    .card,
-    .task-card,
-    .prepare-card a,
-    .download-card a{
-
-        padding:22px;
-
-    }
-
-}
-
-/* Reveal Animation */
-
-.card,
-.task-card,
-.prepare-card a,
-.download-card a{
-
-    opacity:0;
-
-    transform:translateY(30px);
-
-    transition:.6s;
-
-}
-
-.show{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-/* Active Menu */
-
-nav a.active{
-
-    color:var(--primary);
-
-    font-weight:700;
-
-}
-
-/* Back To Top */
-
-#topBtn{
-
-    position:fixed;
-
-    right:20px;
-
-    bottom:20px;
-
-    width:50px;
-
-    height:50px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    color:#fff;
-
-    font-size:22px;
-
-    cursor:pointer;
-
-    display:none;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-    transition:.3s;
-
-    z-index:999;
-
-}
-
-#topBtn:hover{
-
-    transform:translateY(-5px);
-
-}
+    display:flex
