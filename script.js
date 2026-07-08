@@ -1,125 +1,170 @@
-// ================================
+// ==============================
 // HAKIM AI ACADEMY
 // script.js
-// ================================
+// ==============================
 
 // MENU MOBILE
-const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector("nav");
 
-if (menu) {
-    menu.onclick = () => {
-        nav.classList.toggle("active");
-    };
+if(menuBtn){
+
+menuBtn.onclick = function(){
+
+nav.classList.toggle("active");
+
 }
 
-// BUKA / TUTUP MATERI
-function toggleMateri(id) {
-
-    const semua = document.querySelectorAll(".task-content");
-
-    semua.forEach(item => {
-        if (item.id !== id) {
-            item.style.display = "none";
-        }
-    });
-
-    const target = document.getElementById(id);
-
-    if (target.style.display === "block") {
-        target.style.display = "none";
-    } else {
-        target.style.display = "block";
-    }
 }
 
+// ==============================
+// BUKA MATERI
+// ==============================
+
+function toggleMateri(id){
+
+const semuaMateri = document.querySelectorAll(".materi-content");
+
+semuaMateri.forEach(function(item){
+
+if(item.id !== id){
+
+item.style.display = "none";
+
+}
+
+});
+
+const target = document.getElementById(id);
+
+if(target.style.display === "block"){
+
+target.style.display = "none";
+
+}else{
+
+target.style.display = "block";
+
+}
+
+}
+
+// ==============================
 // COPY PROMPT
-function copyPrompt(id) {
+// ==============================
 
-    const text = document.getElementById(id);
+function copyPrompt(id){
 
-    navigator.clipboard.writeText(text.value);
+const text = document.getElementById(id);
 
-    alert("✅ Prompt berhasil disalin!");
+navigator.clipboard.writeText(text.value);
+
+alert("✅ Prompt berhasil disalin.");
+
 }
 
+// ==============================
 // BACK TO TOP
+// ==============================
+
 const backTop = document.getElementById("backTop");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",function(){
 
-    if (window.scrollY > 300) {
-        backTop.style.display = "flex";
-    } else {
-        backTop.style.display = "none";
-    }
+if(window.scrollY > 300){
+
+backTop.style.display = "flex";
+
+}else{
+
+backTop.style.display = "none";
+
+}
 
 });
 
-backTop.onclick = () => {
+backTop.onclick = function(){
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+window.scrollTo({
 
-};
+top:0,
 
+behavior:"smooth"
+
+});
+
+}
+
+// ==============================
 // MENU AKTIF
+// ==============================
+
 const sections = document.querySelectorAll("section");
-const links = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("nav a");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",function(){
 
-    let current = "";
+let current = "";
 
-    sections.forEach(section => {
+sections.forEach(function(section){
 
-        const top = section.offsetTop - 120;
-        const height = section.offsetHeight;
+const sectionTop = section.offsetTop - 120;
+const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= top && window.scrollY < top + height) {
-            current = section.id;
-        }
+if(window.scrollY >= sectionTop){
 
-    });
+current = section.getAttribute("id");
 
-    links.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-
-    });
+}
 
 });
 
-// ANIMASI CARD
-const cards = document.querySelectorAll(".card,.task-card");
+navLinks.forEach(function(link){
 
-const observer = new IntersectionObserver((entries) => {
+link.classList.remove("active");
 
-    entries.forEach(entry => {
+if(link.getAttribute("href") == "#" + current){
 
-        if (entry.isIntersecting) {
+link.classList.add("active");
 
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-
-        }
-
-    });
+}
 
 });
 
-cards.forEach(card => {
+});
 
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-    card.style.transition = "0.6s";
+// ==============================
+// PENCARIAN MATERI
+// ==============================
 
-    observer.observe(card);
+const searchInput = document.querySelector(".search input");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup",function(){
+
+const keyword = this.value.toLowerCase();
+
+const cards = document.querySelectorAll(".materi-card");
+
+cards.forEach(function(card){
+
+const text = card.innerText.toLowerCase();
+
+if(text.indexOf(keyword) > -1){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
 
 });
+
+});
+
+}
+
+console.log("✅ Hakim AI Academy Ready");
