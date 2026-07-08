@@ -709,3 +709,15 @@ padding:25px;
 }
 
 }
+
+.navbar.show{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
