@@ -9,8 +9,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -23,29 +22,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <div class="container">
 
 <div class="logo">
-
 🤖 Hakim AI Academy
-
 </div>
 
 <nav>
 
-<a href="#home">Beranda</a>
+<a href="#beranda">Beranda</a>
 
-<a href="#persiapan">Persiapan</a>
+<a href="#materi">Materi</a>
 
-<a href="#praktek">Praktek AI</a>
+<a href="#prompt">Prompt</a>
 
-<a href="#bonus">Bonus</a>
+<a href="#produk">Produk</a>
 
-<a href="#download">Download</a>
+<a href="#tentang">Tentang</a>
 
 </nav>
 
-<div class="menu">
-
+<div class="menu-btn">
 <i class="fa-solid fa-bars"></i>
-
 </div>
 
 </div>
@@ -54,417 +49,382 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <!-- HERO -->
 
-<section id="home" class="hero">
+<section id="beranda" class="hero">
 
-<div class="container hero-grid">
+<div class="container">
 
-<div class="hero-text">
+<h1>Belajar AI Gratis Untuk Pemula</h1>
 
-<h1>
+<p>
+Pelajari cara membuat gambar AI, video AI, stiker AI dan dapatkan produk digital gratis yang bisa dijual kembali.
+</p>
 
-Belajar AI Dari Nol Sampai Bisa
+<a href="#materi" class="btn">
+Mulai Belajar
+</a>
 
-</h1>
+</div>
+
+</section>
+
+<!-- PENCARIAN -->
+
+<section class="search">
+
+<div class="container">
+
+<h2>🔍 Pencarian Materi</h2>
+
+<input type="text" placeholder="Cari materi belajar AI...">
+
+</div>
+
+</section>
+
+<!-- KATEGORI -->
+
+<section class="kategori">
+
+<div class="container">
+
+<h2>📂 Kategori</h2>
+
+<div class="kategori-grid">
+
+<div class="kategori-card">
+🎨 Gambar AI
+</div>
+
+<div class="kategori-card">
+🎥 Video AI
+</div>
+
+<div class="kategori-card">
+😂 Sticker AI
+</div>
+
+<div class="kategori-card">
+💬 Prompt AI
+</div>
+
+<div class="kategori-card">
+📦 Produk Digital
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TENTANG -->
+
+<section id="tentang">
+
+<div class="container">
+
+<h2>Tentang Website</h2>
 
 <p>
 
-Pelajari Prompt AI, Sticker AI, Editing AI dan berbagai materi lainnya dengan mudah.
+Website ini dibuat untuk membantu pemula belajar AI dengan mudah.
+Semua materi dapat dipelajari langkah demi langkah dan contoh prompt bisa langsung dicopy ke ChatGPT atau AI lainnya.
 
 </p>
 
-<a href="#praktek" class="btn">
+</div>
 
+</section>
+<!-- ================= MATERI BELAJAR ================= -->
+
+<section id="materi">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📚 Materi Belajar AI</h2>
+
+<p>
+Pilih materi yang ingin dipelajari, kemudian isi materi dan prompt sesuai kebutuhan Anda.
+</p>
+
+</div>
+
+<!-- TUGAS 1 -->
+
+<div class="materi-card">
+
+<div class="materi-header">
+
+<h3>📖 Tugas 1</h3>
+
+<h2>Membuat Gambar dari AI</h2>
+
+<p>
+Pelajari cara membuat gambar AI berkualitas menggunakan prompt yang benar.
+</p>
+
+<button class="btn" onclick="toggleMateri('materi1')">
 Mulai Belajar
+</button>
+
+</div>
+
+<div id="materi1" class="materi-content">
+
+<h3>Materi</h3>
+
+<textarea placeholder="Silakan isi materi belajar di sini..."></textarea>
+
+</div>
+
+</div>
+
+<!-- TUGAS 2 -->
+
+<div class="materi-card">
+
+<div class="materi-header">
+
+<h3>📖 Tugas 2</h3>
+
+<h2>Membuat Video dari Gambar</h2>
+
+<p>
+Pelajari cara mengubah gambar menjadi video menggunakan AI.
+</p>
+
+<button class="btn" onclick="toggleMateri('materi2')">
+Mulai Belajar
+</button>
+
+</div>
+
+<div id="materi2" class="materi-content">
+
+<h3>Materi</h3>
+
+<textarea placeholder="Silakan isi materi belajar di sini..."></textarea>
+
+</div>
+
+</div>
+
+<!-- TUGAS 3 -->
+
+<div class="materi-card">
+
+<div class="materi-header">
+
+<h3>📖 Tugas 3</h3>
+
+<h2>Membuat Stiker Lucu Estetik</h2>
+
+<p>
+Belajar membuat stiker AI dengan berbagai gaya yang menarik.
+</p>
+
+<button class="btn" onclick="toggleMateri('materi3')">
+Mulai Belajar
+</button>
+
+</div>
+
+<div id="materi3" class="materi-content">
+
+<h3>Materi</h3>
+
+<textarea placeholder="Silakan isi materi belajar di sini..."></textarea>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= KATEGORI STIKER ================= -->
+
+<section id="kategori-stiker">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🐱 Kategori Stiker</h2>
+
+<p>
+Kategori bisa ditambah, dihapus, atau diubah sesuai kebutuhan.
+</p>
+
+</div>
+
+<div class="kategori-grid">
+
+<div class="kategori-card">🐱 Kucing</div>
+
+<div class="kategori-card">🐼 Panda</div>
+
+<div class="kategori-card">🐔 Ayam</div>
+
+<div class="kategori-card">🐻 Beruang</div>
+
+<div class="kategori-card">🐰 Kelinci</div>
+
+<div class="kategori-card">✨ Lainnya</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PROMPT GRATIS ================= -->
+
+<section id="prompt">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>💬 Prompt Gratis Siap Pakai</h2>
+
+<p>
+Copy prompt di bawah ini lalu tempel ke ChatGPT atau AI lainnya.
+</p>
+
+</div>
+
+<!-- Prompt 1 -->
+
+<div class="prompt-card">
+
+<h3>📝 Prompt 1 - Membuat Gambar AI</h3>
+
+<textarea id="prompt1" readonly>
+
+Silakan isi prompt gambar AI di sini...
+
+</textarea>
+
+<button class="copy-btn" onclick="copyPrompt('prompt1')">
+
+📋 Copy Prompt
+
+</button>
+
+</div>
+
+<!-- Prompt 2 -->
+
+<div class="prompt-card">
+
+<h3>🎥 Prompt 2 - Gambar AI Menjadi Video</h3>
+
+<textarea id="prompt2" readonly>
+
+Silakan isi prompt video AI di sini...
+
+</textarea>
+
+<button class="copy-btn" onclick="copyPrompt('prompt2')">
+
+📋 Copy Prompt
+
+</button>
+
+</div>
+
+<!-- Prompt 3 -->
+
+<div class="prompt-card">
+
+<h3>😂 Prompt 3 - Membuat Stiker Lucu</h3>
+
+<textarea id="prompt3" readonly>
+
+Silakan isi prompt stiker AI di sini...
+
+</textarea>
+
+<button class="copy-btn" onclick="copyPrompt('prompt3')">
+
+📋 Copy Prompt
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUK DIGITAL ================= -->
+
+<section id="produk">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🎁 Produk Digital Gratis Bisa Dijual Kembali ✔️</h2>
+
+<p>
+
+Silakan tambahkan produk digital Anda pada bagian ini.
+
+</p>
+
+</div>
+
+<div class="produk-grid">
+
+<div class="produk-card">
+
+<h3>📦 Produk 1</h3>
+
+<p>Silakan isi nama produk.</p>
+
+<a href="#" class="btn">
+
+Download
 
 </a>
 
 </div>
 
-<div class="hero-image">
+<div class="produk-card">
 
-<i class="fa-solid fa-robot"></i>
+<h3>📦 Produk 2</h3>
 
-</div>
+<p>Silakan isi nama produk.</p>
 
-</div>
+<a href="#" class="btn">
 
-</section>
+Download
 
-<!-- PERSIAPAN -->
-
-<section id="persiapan">
-
-<div class="container">
-
-<div class="title">
-
-<h2>Persiapan Belajar</h2>
-
-<p>
-
-Pastikan semuanya sudah siap sebelum memulai.
-
-</p>
+</a>
 
 </div>
 
-<div class="grid-3">
+<div class="produk-card">
 
-<div class="card">
+<h3>📦 Produk 3</h3>
 
-<i class="fa-solid fa-user"></i>
+<p>Silakan isi nama produk.</p>
 
-<h3>Buat Akun AI</h3>
+<a href="#" class="btn">
 
-<p>
+Download
 
-ChatGPT, Gemini atau AI lainnya.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-<h3>Siapkan HP</h3>
-
-<p>
-
-Gunakan HP atau Laptop.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-wifi"></i>
-
-<h3>Internet</h3>
-
-<p>
-
-Pastikan koneksi stabil.
-
-</p>
+</a>
 
 </div>
 
 </div>
 
 </div>
-
-</section>
-
-<!-- PRAKTEK -->
-
-<section id="praktek">
-
-<div class="container">
-
-<div class="title">
-
-<h2>Praktek Belajar AI</h2>
-
-<p>
-
-Klik Mulai Belajar untuk membuka materi.
-
-</p>
-
-</div>
-
-<!-- ================= TUGAS 1 ================= -->
-
-<div class="task-card">
-
-    <div class="task-header">
-
-        <h3>📖 Tugas 1</h3>
-
-        <h2>Belajar Prompt Gambar AI</h2>
-
-        <p>
-            Pelajari cara membuat prompt gambar AI yang detail agar menghasilkan gambar berkualitas tinggi.
-        </p>
-
-        <button class="btn" onclick="toggleMateri('tugas1')">
-
-            Mulai Belajar
-
-        </button>
-
-    </div>
-
-    <div id="tugas1" class="task-content">
-
-        <h4>📖 Penjelasan</h4>
-
-        <p>
-
-            Pada materi ini kamu akan belajar membuat prompt AI yang jelas,
-            lengkap dan mudah dipahami AI Image Generator.
-
-        </p>
-
-        <h4>📝 Contoh Prompt</h4>
-
-        <textarea id="prompt1" readonly>
-
-Tempelkan prompt Anda di sini...
-
-        </textarea>
-
-        <button class="copy-btn" onclick="copyPrompt('prompt1')">
-
-            📋 Copy Prompt
-
-        </button>
-
-    </div>
-
-</div>
-
-<!-- ================= TUGAS 2 ================= -->
-
-<div class="task-card">
-
-    <div class="task-header">
-
-        <h3>📖 Tugas 2</h3>
-
-        <h2>Membuat Stiker Lucu</h2>
-
-        <p>
-            Belajar membuat stiker lucu menggunakan AI dengan berbagai gaya.
-        </p>
-
-        <button class="btn" onclick="toggleMateri('tugas2')">
-
-            Mulai Belajar
-
-        </button>
-
-    </div>
-
-    <div id="tugas2" class="task-content">
-
-        <h4>📖 Penjelasan</h4>
-
-        <p>
-
-            Gunakan prompt yang tepat agar AI menghasilkan stiker yang lucu,
-            unik dan berkualitas tinggi.
-
-        </p>
-
-        <h4>📝 Contoh Prompt</h4>
-
-        <textarea id="prompt2" readonly>
-
-Tempelkan prompt Anda di sini...
-
-        </textarea>
-
-        <button class="copy-btn" onclick="copyPrompt('prompt2')">
-
-            📋 Copy Prompt
-
-        </button>
-
-    </div>
-
-</div>
-
-<!-- ================= TUGAS 3 ================= -->
-
-<div class="task-card">
-
-    <div class="task-header">
-
-        <h3>📖 Tugas 3</h3>
-
-        <h2>Menghaluskan Foto Blur</h2>
-
-        <p>
-            Pelajari cara meningkatkan kualitas foto blur menggunakan AI.
-        </p>
-
-        <button class="btn" onclick="toggleMateri('tugas3')">
-
-            Mulai Belajar
-
-        </button>
-
-    </div>
-
-    <div id="tugas3" class="task-content">
-
-        <h4>📖 Penjelasan</h4>
-
-        <p>
-
-            Materi ini membahas cara memperjelas foto blur dengan bantuan AI
-            agar terlihat lebih tajam.
-
-        </p>
-
-        <h4>📝 Contoh Prompt</h4>
-
-        <textarea id="prompt3" readonly>
-
-Tempelkan prompt Anda di sini...
-
-        </textarea>
-
-        <button class="copy-btn" onclick="copyPrompt('prompt3')">
-
-            📋 Copy Prompt
-
-        </button>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= BONUS ================= -->
-
-<section id="bonus">
-
-    <div class="container">
-
-        <div class="title">
-
-            <h2>🎁 Bonus Belajar</h2>
-
-            <p>
-
-                Bonus materi akan terus diperbarui secara berkala.
-
-            </p>
-
-        </div>
-
-        <div class="grid-3">
-
-            <div class="card">
-
-                <i class="fa-solid fa-gift"></i>
-
-                <h3>Prompt Premium</h3>
-
-                <p>
-
-                    Kumpulan prompt siap pakai.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-book-open"></i>
-
-                <h3>Ebook AI</h3>
-
-                <p>
-
-                    Panduan belajar AI untuk pemula.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-layer-group"></i>
-
-                <h3>Template AI</h3>
-
-                <p>
-
-                    Template siap digunakan.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= DOWNLOAD ================= -->
-
-<section id="download">
-
-    <div class="container">
-
-        <div class="title">
-
-            <h2>📥 Download</h2>
-
-            <p>
-
-                Download semua materi belajar di bawah ini.
-
-            </p>
-
-        </div>
-
-        <div class="grid-3">
-
-            <div class="card">
-
-                <i class="fa-solid fa-file-arrow-down"></i>
-
-                <h3>Prompt AI</h3>
-
-                <a href="#" class="btn">
-
-                    Download
-
-                </a>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-file-pdf"></i>
-
-                <h3>Ebook</h3>
-
-                <a href="#" class="btn">
-
-                    Download
-
-                </a>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-folder-open"></i>
-
-                <h3>Template</h3>
-
-                <a href="#" class="btn">
-
-                    Download
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </section>
 
@@ -472,35 +432,33 @@ Tempelkan prompt Anda di sini...
 
 <footer>
 
-    <div class="container">
+<div class="container">
 
-        <h2>🤖 Hakim AI Academy</h2>
+<h2>🤖 Hakim AI Academy</h2>
 
-        <p>
+<p>
 
-            Belajar AI dengan mudah melalui latihan langsung.
-            Semua materi dibuat sederhana dan mudah dipahami.
+Belajar AI lebih mudah dengan materi sederhana, prompt siap pakai, dan produk digital gratis.
 
-        </p>
+</p>
 
-        <p>
+<p>
 
-            © 2026 Hakim AI Academy - All Rights Reserved.
+© 2026 Hakim AI Academy - All Rights Reserved.
 
-        </p>
+</p>
 
-    </div>
+</div>
 
 </footer>
 
 <button id="backTop">
 
-    ↑
+⬆
 
 </button>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
