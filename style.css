@@ -1183,3 +1183,131 @@ color:#fff;
 
 }
 
+/* ==========================================
+FINISH
+========================================== */
+
+.lesson-finish{
+
+padding:90px 0;
+
+}
+
+.finish-card{
+
+background:#fff;
+
+padding:60px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.finish-card i{
+
+font-size:70px;
+
+color:#22C55E;
+
+margin-bottom:20px;
+
+}
+
+.finish-card h2{
+
+margin-bottom:15px;
+
+}
+
+.finish-card p{
+
+margin-bottom:30px;
+
+color:#64748B;
+
+}
+
+/* ==========================================
+NEXT
+========================================== */
+
+.next-course{
+
+padding-bottom:90px;
+
+}
+
+.next-card{
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+padding:45px;
+
+border-radius:25px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:#fff;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+}
+
+.next-card small{
+
+opacity:.8;
+
+}
+
+.next-card h2{
+
+margin:10px 0;
+
+}
+
+/* ==========================================
+TOAST
+========================================== */
+
+#toast{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+background:#22C55E;
+
+color:#fff;
+
+padding:15px 28px;
+
+border-radius:50px;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.4s;
+
+z-index:9999;
+
+}
+
+#toast.show{
+
+opacity:1;
+
+}
+
