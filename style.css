@@ -1,6 +1,7 @@
-/* ==========================
-   RESET
-========================== */
+/* ===================================
+   STUDIO BELAJAR AI
+   STYLE.CSS
+=================================== */
 
 *{
 margin:0;
@@ -25,25 +26,26 @@ max-width:1200px;
 margin:auto;
 }
 
-/* ==========================
+/* =========================
 HEADER
-========================== */
+========================= */
 
 header{
 position:fixed;
 top:0;
 left:0;
 width:100%;
-background:#fff;
+height:75px;
+background:#ffffff;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 z-index:999;
 }
 
 header .container{
+height:75px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-height:75px;
 }
 
 .logo{
@@ -59,8 +61,8 @@ gap:25px;
 
 nav a{
 text-decoration:none;
-color:#333;
 font-weight:600;
+color:#333;
 transition:.3s;
 }
 
@@ -74,9 +76,9 @@ font-size:28px;
 cursor:pointer;
 }
 
-/* ==========================
+/* =========================
 HERO
-========================== */
+========================= */
 
 .hero{
 padding:150px 0 100px;
@@ -86,35 +88,53 @@ text-align:center;
 }
 
 .hero h1{
-font-size:55px;
+font-size:56px;
 margin-bottom:20px;
 }
 
 .hero p{
 max-width:700px;
 margin:auto;
-margin-bottom:30px;
 font-size:18px;
+margin-bottom:35px;
+}
+
+.hero-button{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
 display:inline-block;
-padding:14px 35px;
-background:#fff;
+padding:14px 34px;
+background:#ffffff;
 color:#2563eb;
+font-weight:600;
 text-decoration:none;
 border-radius:30px;
-font-weight:600;
 transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-5px);
+transform:translateY(-4px);
 }
 
-/* ==========================
+.btn-outline{
+background:transparent;
+border:2px solid #fff;
+color:#fff;
+}
+
+.btn-outline:hover{
+background:#fff;
+color:#2563eb;
+}
+
+/* =========================
 SECTION
-========================== */
+========================= */
 
 section{
 padding:80px 0;
@@ -134,22 +154,22 @@ margin-bottom:10px;
 color:#666;
 }
 
-/* ==========================
+/* =========================
 SEARCH
-========================== */
+========================= */
 
 .search input{
 width:100%;
 padding:18px;
-border-radius:15px;
 border:1px solid #ddd;
-font-size:16px;
+border-radius:15px;
 outline:none;
+font-size:16px;
 }
 
-/* ==========================
+/* =========================
 KATEGORI
-========================== */
+========================= */
 
 .kategori-grid{
 display:grid;
@@ -163,9 +183,9 @@ padding:25px;
 border-radius:15px;
 text-align:center;
 font-weight:600;
+cursor:pointer;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
-cursor:pointer;
 }
 
 .kategori-card:hover{
@@ -173,302 +193,236 @@ background:#2563eb;
 color:#fff;
 transform:translateY(-5px);
 }
-/* ==========================
+/* =========================
+   TENTANG
+========================= */
+
+#tentang{
+background:#ffffff;
+}
+
+#tentang p{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#666;
+font-size:17px;
+}
+
+/* =========================
    MATERI BELAJAR
-========================== */
+========================= */
 
 #materi{
-    background:#eef4ff;
+background:#eef4ff;
 }
 
 .materi-card{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    margin-bottom:30px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
+background:#ffffff;
+padding:30px;
+margin-bottom:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .materi-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(37,99,235,.15);
+transform:translateY(-5px);
 }
 
-.materi-header h3{
-    color:#2563eb;
-    margin-bottom:10px;
+.materi-card h3{
+color:#2563eb;
+margin-bottom:10px;
 }
 
-.materi-header h2{
-    margin-bottom:15px;
-    font-size:28px;
+.materi-card h2{
+margin-bottom:15px;
+font-size:28px;
 }
 
-.materi-header p{
-    color:#666;
-    margin-bottom:20px;
+.materi-card p{
+margin-bottom:20px;
+color:#666;
 }
 
 .materi-content{
-    display:none;
-    margin-top:20px;
-    padding-top:20px;
-    border-top:1px solid #e5e7eb;
+display:none;
+margin-top:20px;
 }
 
-/* ==========================
-   TEXTAREA
-========================== */
-
-textarea{
-    width:100%;
-    min-height:220px;
-    padding:15px;
-    border:1px solid #d1d5db;
-    border-radius:15px;
-    resize:vertical;
-    outline:none;
-    font-size:15px;
-    margin-top:15px;
-    background:#f9fafb;
+.materi-content textarea{
+width:100%;
+min-height:220px;
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+resize:vertical;
+font-size:15px;
+outline:none;
 }
 
-textarea:focus{
-    border-color:#2563eb;
-}
-
-/* ==========================
+/* =========================
    PROMPT GRATIS
-========================== */
+========================= */
 
 #prompt{
-    background:#ffffff;
+background:#ffffff;
 }
 
 .prompt-card{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+background:#ffffff;
+padding:30px;
+margin-bottom:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .prompt-card h3{
-    margin-bottom:15px;
+margin-bottom:15px;
+color:#2563eb;
 }
 
-/* ==========================
-   COPY BUTTON
-========================== */
+.prompt-card textarea{
+width:100%;
+min-height:180px;
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+resize:none;
+margin-bottom:20px;
+font-size:15px;
+}
 
 .copy-btn{
-    margin-top:15px;
-    padding:12px 25px;
-    border:none;
-    border-radius:12px;
-    background:#16a34a;
-    color:#fff;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
+padding:14px 30px;
+background:#16a34a;
+color:#fff;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
 }
 
 .copy-btn:hover{
-    background:#15803d;
+background:#15803d;
 }
 
-/* ==========================
+/* =========================
    PRODUK DIGITAL
-========================== */
+========================= */
 
 #produk{
-    background:#eef4ff;
+background:#eef4ff;
 }
 
 .produk-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .produk-card{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+background:#ffffff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .produk-card:hover{
-    transform:translateY(-6px);
+transform:translateY(-5px);
 }
 
 .produk-card h3{
-    margin-bottom:15px;
+margin-bottom:15px;
+color:#2563eb;
 }
 
 .produk-card p{
-    color:#666;
-    margin-bottom:20px;
+margin-bottom:20px;
+color:#666;
 }
-
-/* ==========================
+/* =========================
    FOOTER
-========================== */
+========================= */
 
 footer{
-    background:#111827;
-    color:#fff;
-    text-align:center;
-    padding:60px 20px;
-}
-
-footer h2{
-    margin-bottom:15px;
-}
-
-footer p{
-    color:#d1d5db;
-    margin-top:10px;
-}
-
-/* ==========================
-   BACK TO TOP
-========================== */
-
-#backTop{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:50px;
-    height:50px;
-    border:none;
-    border-radius:50%;
-    background:#2563eb;
-    color:#fff;
-    font-size:20px;
-    cursor:pointer;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-#backTop:hover{
-    background:#1d4ed8;
-}
-/* ==========================
-   RESPONSIVE MOBILE
-========================== */
-
-@media (max-width:992px){
-
-.hero h1{
-font-size:40px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-nav{
-display:none;
-position:absolute;
-top:75px;
-left:0;
-width:100%;
-background:#ffffff;
-flex-direction:column;
-padding:20px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
-
-nav.active{
-display:flex;
-}
-
-nav a{
-padding:12px 0;
-border-bottom:1px solid #eeeeee;
-}
-
-.menu-btn{
-display:block;
-}
-
-.kategori-grid,
-.produk-grid{
-grid-template-columns:1fr;
-}
-
-.section-title h2{
-font-size:30px;
-}
-
-.hero{
-padding:130px 20px 80px;
-}
-
-.materi-card,
-.prompt-card,
-.produk-card{
-padding:20px;
-}
-
-.btn,
-.copy-btn{
-width:100%;
+background:#111827;
+color:#ffffff;
+padding:60px 20px;
 text-align:center;
 }
 
+footer h2{
+font-size:30px;
+margin-bottom:15px;
 }
 
-/* ==========================
-   TABLET
-========================== */
-
-@media (min-width:768px) and (max-width:1024px){
-
-.kategori-grid{
-grid-template-columns:repeat(2,1fr);
+footer p{
+color:#d1d5db;
+margin:10px 0;
 }
 
-.produk-grid{
-grid-template-columns:repeat(2,1fr);
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backTop{
+position:fixed;
+right:20px;
+bottom:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:#ffffff;
+font-size:22px;
+cursor:pointer;
+display:none;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+transition:.3s;
+z-index:999;
 }
 
+#backTop:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
 }
 
-/* ==========================
+/* =========================
    ANIMASI
-========================== */
+========================= */
 
+.hero,
+.kategori-card,
 .materi-card,
 .prompt-card,
-.produk-card,
-.kategori-card{
-animation:fadeUp .5s ease;
+.produk-card{
+animation:fadeUp .6s ease;
 }
 
 @keyframes fadeUp{
 
-from{
+0%{
 opacity:0;
 transform:translateY(30px);
 }
 
-to{
+100%{
 opacity:1;
 transform:translateY(0);
 }
 
 }
 
-/* ==========================
+/* =========================
    SCROLLBAR
-========================== */
+========================= */
 
 ::-webkit-scrollbar{
 width:10px;
@@ -487,72 +441,88 @@ border-radius:20px;
 background:#1d4ed8;
 }
 
-/* ==========================
-   SELECTION
-========================== */
+/* =========================
+   RESPONSIVE
+========================= */
 
-::selection{
-background:#2563eb;
-color:#ffffff;
+@media(max-width:768px){
+
+header .container{
+height:70px;
 }
 
-/* ==========================
-   ACTIVE MENU
-========================== */
-
-nav a.active{
-color:#2563eb;
-font-weight:700;
+.logo{
+font-size:22px;
 }
 
-/* ==========================
-   HOVER
-========================== */
-
-.btn,
-.copy-btn,
-.kategori-card,
-.produk-card,
-.materi-card{
-transition:all .3s ease;
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#ffffff;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.btn:hover{
-background:#2563eb;
-color:#ffffff;
+nav.active{
+display:flex;
 }
 
-.copy-btn:hover{
-transform:scale(1.03);
+nav a{
+padding:12px 0;
+border-bottom:1px solid #eeeeee;
 }
 
-.kategori-card:hover,
-.produk-card:hover,
-.materi-card:hover{
-transform:translateY(-5px);
-}
-
-/* ==========================
-   AKHIR STYLE.CSS
-========================== */
-
-h1,h2,h3,h4,h5,p{
-margin:0;
-}
-
-img{
-max-width:100%;
+.menu-btn{
 display:block;
 }
 
-button{
-font-family:inherit;
+.hero{
+padding:120px 20px 70px;
 }
 
-a{
-text-decoration:none;
+.hero h1{
+font-size:34px;
 }
 
-body{
-padding-top:75px;
+.hero p{
+font-size:16px;
 }
+
+.hero-button{
+flex-direction:column;
+}
+
+.btn,
+.copy-btn{
+width:100%;
+text-align:center;
+}
+
+.kategori-grid,
+.produk-grid{
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+font-size:28px;
+}
+
+.materi-card,
+.prompt-card,
+.produk-card{
+padding:20px;
+}
+
+textarea{
+font-size:14px;
+}
+
+}
+
+/* =========================
+   SELESAI
+========================= */
