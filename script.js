@@ -1,170 +1,125 @@
-/*====================================
-  HAKIM AI ACADEMY
-  SCRIPT.JS
-====================================*/
+// ================================
+// HAKIM AI ACADEMY
+// script.js
+// ================================
 
-/*==========================
-  MENU MOBILE
-==========================*/
+// MENU MOBILE
+const menu = document.querySelector(".menu");
+const nav = document.querySelector("nav");
 
-const menuBtn = document.querySelector(".menu-btn");
-const navbar = document.querySelector(".navbar");
-
-if(menuBtn){
-
-menuBtn.addEventListener("click",()=>{
-
-navbar.classList.toggle("show");
-
-});
-
+if (menu) {
+    menu.onclick = () => {
+        nav.classList.toggle("active");
+    };
 }
 
-/*==========================
-  BUKA / TUTUP MATERI
-==========================*/
+// BUKA / TUTUP MATERI
+function toggleMateri(id) {
 
-function toggleMateri(id){
+    const semua = document.querySelectorAll(".task-content");
 
-const materi=document.getElementById(id);
+    semua.forEach(item => {
+        if (item.id !== id) {
+            item.style.display = "none";
+        }
+    });
 
-if(materi.style.display==="block"){
+    const target = document.getElementById(id);
 
-materi.style.display="none";
-
-}else{
-
-document.querySelectorAll(".materi-detail").forEach(item=>{
-
-item.style.display="none";
-
-});
-
-materi.style.display="block";
-
+    if (target.style.display === "block") {
+        target.style.display = "none";
+    } else {
+        target.style.display = "block";
+    }
 }
 
+// COPY PROMPT
+function copyPrompt(id) {
+
+    const text = document.getElementById(id);
+
+    navigator.clipboard.writeText(text.value);
+
+    alert("✅ Prompt berhasil disalin!");
 }
 
-/*==========================
-  COPY PROMPT
-==========================*/
+// BACK TO TOP
+const backTop = document.getElementById("backTop");
 
-function copyPrompt(id){
+window.addEventListener("scroll", () => {
 
-const prompt=document.getElementById(id);
-
-prompt.select();
-
-prompt.setSelectionRange(0,99999);
-
-navigator.clipboard.writeText(prompt.value);
-
-alert("✅ Prompt berhasil disalin!");
-
-}
-
-/*==========================
-  BACK TO TOP
-==========================*/
-
-const backTop=document.getElementById("backTop");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>300){
-
-backTop.style.display="flex";
-
-}else{
-
-backTop.style.display="none";
-
-}
+    if (window.scrollY > 300) {
+        backTop.style.display = "flex";
+    } else {
+        backTop.style.display = "none";
+    }
 
 });
 
-backTop.addEventListener("click",()=>{
+backTop.onclick = () => {
 
-window.scrollTo({
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
-top:0,
+};
 
-behavior:"smooth"
+// MENU AKTIF
+const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll("nav a");
 
-});
+window.addEventListener("scroll", () => {
 
-});
+    let current = "";
 
-/*==========================
-  MENU AKTIF
-==========================*/
+    sections.forEach(section => {
 
-const sections=document.querySelectorAll("section");
-const navLinks=document.querySelectorAll(".navbar a");
+        const top = section.offsetTop - 120;
+        const height = section.offsetHeight;
 
-window.addEventListener("scroll",()=>{
+        if (window.scrollY >= top && window.scrollY < top + height) {
+            current = section.id;
+        }
 
-let current="";
+    });
 
-sections.forEach(section=>{
+    links.forEach(link => {
 
-const top=section.offsetTop-120;
-const height=section.offsetHeight;
+        link.classList.remove("active");
 
-if(pageYOffset>=top){
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
 
-current=section.getAttribute("id");
-
-}
-
-});
-
-navLinks.forEach(link=>{
-
-link.classList.remove("active");
-
-if(link.getAttribute("href")==="#"+current){
-
-link.classList.add("active");
-
-}
+    });
 
 });
 
-});
+// ANIMASI CARD
+const cards = document.querySelectorAll(".card,.task-card");
 
-/*==========================
-  ANIMASI SCROLL
-==========================*/
+const observer = new IntersectionObserver((entries) => {
 
-const cards=document.querySelectorAll(
-".persiapan-card,.praktek-card,.bonus-card,.download-card"
-);
+    entries.forEach(entry => {
 
-const observer=new IntersectionObserver((entries)=>{
+        if (entry.isIntersecting) {
 
-entries.forEach(entry=>{
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
 
-if(entry.isIntersecting){
+        }
 
-entry.target.style.opacity="1";
-entry.target.style.transform="translateY(0)";
-
-}
+    });
 
 });
 
-});
+cards.forEach(card => {
 
-cards.forEach(card=>{
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
+    card.style.transition = "0.6s";
 
-card.style.opacity="0";
-card.style.transform="translateY(40px)";
-card.style.transition=".6s";
-
-observer.observe(card);
+    observer.observe(card);
 
 });
-
-console.log("Hakim AI Academy Ready 🚀");
