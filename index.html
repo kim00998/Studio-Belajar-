@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakim AI Academy</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Hakim AI Academy - Praktek Belajar AI</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -18,27 +14,27 @@
 
 <body>
 
-<!-- ===================== HEADER ===================== -->
+<!-- ================= HEADER ================= -->
 
 <header class="header">
 
     <div class="container">
 
         <a href="#" class="logo">
-
-            <i class="fa-solid fa-robot"></i>
-
-            <span>Hakim AI Academy</span>
-
+            🤖 Hakim AI Academy
         </a>
 
         <nav class="navbar">
 
-            <a class="active" href="#">Beranda</a>
+            <a href="#home" class="active">Beranda</a>
+
+            <a href="#rekaman">Rekaman</a>
 
             <a href="#persiapan">Persiapan</a>
 
             <a href="#praktek">Praktek Belajar</a>
+
+            <a href="#bonus">Bonus</a>
 
             <a href="#download">Download</a>
 
@@ -54,30 +50,31 @@
 
 </header>
 
-<!-- ===================== HERO ===================== -->
+<!-- ================= HERO ================= -->
 
-<section class="hero">
+<section id="home" class="hero">
 
     <div class="container hero-grid">
 
-        <div class="hero-left">
+        <div class="hero-text">
 
             <span class="hero-badge">
 
-                🚀 Belajar AI Praktis
+                🚀 Belajar AI Gratis
 
             </span>
 
             <h1>
 
-                Belajar AI Dari Nol Sampai Bisa Menghasilkan Uang
+                Praktek Belajar AI Untuk Pemula Hingga Mahir
 
             </h1>
 
             <p>
 
-                Website belajar AI berisi materi, video, prompt premium,
-                storyboard, latihan, dan tugas yang bisa langsung dipraktikkan.
+                Pelajari AI dengan metode praktek langsung.
+                Semua materi dibuat sederhana, mudah dipahami,
+                dan dapat langsung dipraktekan.
 
             </p>
 
@@ -89,9 +86,9 @@
 
                 </a>
 
-                <a href="#persiapan" class="btn-secondary">
+                <a href="#rekaman" class="btn-secondary">
 
-                    Persiapan
+                    Lihat Materi
 
                 </a>
 
@@ -101,9 +98,9 @@
 
                 <div>
 
-                    <h3>50+</h3>
+                    <h3>3+</h3>
 
-                    <span>Materi</span>
+                    <span>Tugas</span>
 
                 </div>
 
@@ -119,7 +116,7 @@
 
                     <h3>Gratis</h3>
 
-                    <span>Update</span>
+                    <span>Belajar</span>
 
                 </div>
 
@@ -127,37 +124,26 @@
 
         </div>
 
-        <div class="hero-right">
+        <div class="hero-card">
 
-            <div class="hero-card">
+            <div class="icon-circle">
 
-                <div class="icon-circle">
-
-                    🤖
-
-                </div>
-
-                <h2>
-
-                    Hakim AI Academy
-
-                </h2>
-
-                <p>
-
-                    Belajar AI lebih mudah dengan sistem praktek langkah demi langkah.
-
-                </p>
-
-                <div class="card-status">
-
-                    <span class="status-dot"></span>
-
-                    Website Aktif
-
-                </div>
+                <i class="fa-solid fa-robot"></i>
 
             </div>
+
+            <h2>
+
+                AI Academy
+
+            </h2>
+
+            <p>
+
+                Belajar AI langkah demi langkah
+                dengan latihan yang mudah dipahami.
+
+            </p>
 
         </div>
 
@@ -165,559 +151,37 @@
 
 </section>
 
-<!-- ===================== REKAMAN MATERI ===================== -->
+<!-- ================= REKAMAN ================= -->
 
-<section class="materi">
+<section id="rekaman" class="materi">
 
     <div class="container">
 
         <div class="section-header">
 
-            <span>🎥 Rekaman Materi</span>
+            <span>📺 Rekaman Materi</span>
 
-            <h2>Video Belajar AI</h2>
+            <h2>Video Pembelajaran</h2>
 
             <p>
-                Tonton video pembelajaran sebelum mengerjakan tugas.
+
+                Tonton video terlebih dahulu sebelum mengerjakan tugas.
+
             </p>
 
         </div>
 
-        <div class="materi-grid">
+        <div class="video-card">
 
-            <div class="video-card">
-
-                <iframe
+            <iframe
+                width="100%"
+                height="500"
                 src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="Video AI"
                 allowfullscreen>
-                </iframe>
-
-            </div>
-
-            <div class="materi-info">
-
-                <div class="info-card">
-
-                    <i class="fa-solid fa-circle-play"></i>
-
-                    <div>
-
-                        <h3>Video Pembelajaran</h3>
-
-                        <p>
-                            Pelajari materi AI langkah demi langkah sebelum praktek.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="info-card">
-
-                    <i class="fa-solid fa-file-lines"></i>
-
-                    <div>
-
-                        <h3>Modul PDF</h3>
-
-                        <p>
-                            Download ringkasan materi agar mudah dipelajari kembali.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="info-card">
-
-                    <i class="fa-solid fa-lightbulb"></i>
-
-                    <div>
-
-                        <h3>Tips Belajar</h3>
-
-                        <p>
-                            Ikuti urutan materi agar hasil latihan lebih maksimal.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
+            </iframe>
 
         </div>
 
     </div>
 
 </section>
-
-<!-- ===================== PERSIAPAN ===================== -->
-
-<section id="persiapan" class="persiapan">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>📖 Persiapan</span>
-
-            <h2>Sebelum Mulai Belajar</h2>
-
-            <p>
-                Pastikan semua kebutuhan di bawah sudah siap.
-            </p>
-
-        </div>
-
-        <div class="persiapan-grid">
-
-            <div class="persiapan-card">
-
-                <div class="card-icon">
-                    🤖
-                </div>
-
-                <h3>ChatGPT</h3>
-
-                <p>
-                    Siapkan akun ChatGPT untuk menjalankan semua prompt latihan.
-                </p>
-
-            </div>
-
-            <div class="persiapan-card">
-
-                <div class="card-icon">
-                    💎
-                </div>
-
-                <h3>Gemini</h3>
-
-                <p>
-                    Gunakan Gemini sebagai alternatif untuk mencoba prompt yang sama.
-                </p>
-
-            </div>
-
-            <div class="persiapan-card">
-
-                <div class="card-icon">
-                    🎨
-                </div>
-
-                <h3>Canva AI</h3>
-
-                <p>
-                    Digunakan untuk membuat desain, presentasi, dan konten visual.
-                </p>
-
-            </div>
-
-            <div class="persiapan-card">
-
-                <div class="card-icon">
-                    🎬
-                </div>
-
-                <h3>Veo AI</h3>
-
-                <p>
-                    Digunakan untuk membuat video AI dari storyboard dan prompt.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================== PRAKTEK BELAJAR ===================== -->
-
-<section id="praktek" class="praktek">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>📚 Praktek Belajar</span>
-
-            <h2>Kerjakan Tugas Satu Per Satu</h2>
-
-            <p>
-                Ikuti semua tugas sesuai urutan agar hasil belajar lebih maksimal.
-            </p>
-
-        </div>
-
-        <div class="praktek-grid">
-
-            <!-- TUGAS 1 -->
-
-            <div class="praktek-card">
-
-                <div class="nomor">
-                    01
-                </div>
-
-                <div class="icon">
-                    🤖
-                </div>
-
-                <h3>Tugas 1</h3>
-
-                <h4>Prompt Gambar AI</h4>
-
-                <p>
-                    Pelajari cara membuat gambar AI menggunakan prompt profesional.
-                </p>
-
-                <ul>
-
-                    <li>✔ Prompt Siap Pakai</li>
-
-                    <li>✔ Copy Prompt</li>
-
-                    <li>✔ Contoh Hasil</li>
-
-                </ul>
-
-                <a href="tugas1.html" class="btn-task">
-
-                    Mulai Belajar
-
-                </a>
-
-            </div>
-
-            <!-- TUGAS 2 -->
-
-            <div class="praktek-card">
-
-                <div class="nomor">
-                    02
-                </div>
-
-                <div class="icon">
-                    🎬
-                </div>
-
-                <h3>Tugas 2</h3>
-
-                <h4>Storyboard ASMR</h4>
-
-                <p>
-                    Belajar membuat storyboard video ASMR berdurasi 10 detik.
-                </p>
-
-                <ul>
-
-                    <li>✔ Prompt Storyboard</li>
-
-                    <li>✔ Struktur Video</li>
-
-                    <li>✔ Contoh Video</li>
-
-                </ul>
-
-                <a href="tugas2.html" class="btn-task">
-
-                    Mulai Belajar
-
-                </a>
-
-            </div>
-
-            <!-- TUGAS 3 -->
-
-            <div class="praktek-card">
-
-                <div class="nomor">
-                    03
-                </div>
-
-                <div class="icon">
-                    🎨
-                </div>
-
-                <h3>Tugas 3</h3>
-
-                <h4>Prompt Stiker Lucu</h4>
-
-                <p>
-                    Belajar membuat stiker lucu berkualitas tinggi menggunakan AI.
-                </p>
-
-                <ul>
-
-                    <li>✔ Prompt Premium</li>
-
-                    <li>✔ Copy Prompt</li>
-
-                    <li>✔ Contoh Stiker</li>
-
-                </ul>
-
-                <a href="tugas3.html" class="btn-task">
-
-                    Mulai Belajar
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================== BONUS ===================== -->
-
-<section class="bonus">
-
-    <div class="container">
-
-        <div class="bonus-box">
-
-            <div class="bonus-left">
-
-                <span>🎁 Bonus</span>
-
-                <h2>Kumpulan Prompt Premium</h2>
-
-                <p>
-
-                    Dapatkan ratusan prompt AI yang siap digunakan untuk gambar, video,
-                    logo, presentasi, dan bisnis digital.
-
-                </p>
-
-            </div>
-
-            <div class="bonus-right">
-
-                <a href="#download" class="btn-primary">
-
-                    Download Bonus
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================== DOWNLOAD ===================== -->
-
-<section id="download" class="download">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>📂 Download</span>
-
-            <h2>File Pendukung</h2>
-
-            <p>
-                Download semua file latihan, prompt, template dan bonus.
-            </p>
-
-        </div>
-
-        <div class="download-grid">
-
-            <div class="download-card">
-
-                <i class="fa-solid fa-file-pdf"></i>
-
-                <h3>Ebook AI</h3>
-
-                <p>Panduan belajar AI untuk pemula.</p>
-
-                <a href="#">Download</a>
-
-            </div>
-
-            <div class="download-card">
-
-                <i class="fa-solid fa-file-image"></i>
-
-                <h3>Prompt AI</h3>
-
-                <p>Kumpulan prompt premium.</p>
-
-                <a href="#">Download</a>
-
-            </div>
-
-            <div class="download-card">
-
-                <i class="fa-solid fa-video"></i>
-
-                <h3>Storyboard</h3>
-
-                <p>Template storyboard video AI.</p>
-
-                <a href="#">Download</a>
-
-            </div>
-
-            <div class="download-card">
-
-                <i class="fa-solid fa-folder-open"></i>
-
-                <h3>Bonus Asset</h3>
-
-                <p>Bonus template siap pakai.</p>
-
-                <a href="#">Download</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================== PROGRESS ===================== -->
-
-<section class="progress">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span>📈 Progress</span>
-
-            <h2>Perjalanan Belajar</h2>
-
-        </div>
-
-        <div class="progress-wrapper">
-
-            <div class="progress-item">
-
-                <h3>3</h3>
-
-                <span>Total Tugas</span>
-
-            </div>
-
-            <div class="progress-item">
-
-                <h3>100+</h3>
-
-                <span>Prompt AI</span>
-
-            </div>
-
-            <div class="progress-item">
-
-                <h3>0%</h3>
-
-                <span>Progress</span>
-
-            </div>
-
-            <div class="progress-item">
-
-                <h3>∞</h3>
-
-                <span>Update</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================== FOOTER ===================== -->
-
-<footer>
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div>
-
-                <h3>🤖 Hakim AI Academy</h3>
-
-                <p>
-
-                    Platform belajar AI dengan sistem praktek langsung.
-                    Cocok untuk pemula hingga tingkat lanjut.
-
-                </p>
-
-            </div>
-
-            <div>
-
-                <h4>Menu</h4>
-
-                <ul>
-
-                    <li><a href="#">Beranda</a></li>
-
-                    <li><a href="#persiapan">Persiapan</a></li>
-
-                    <li><a href="#praktek">Praktek</a></li>
-
-                    <li><a href="#download">Download</a></li>
-
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h4>Kontak</h4>
-
-                <ul>
-
-                    <li>Email : admin@email.com</li>
-
-                    <li>Instagram : @hakim03433</li>
-
-                    <li>Website : hakimai.com</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div class="copyright">
-
-            © 2026 Hakim AI Academy • All Rights Reserved
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- Back To Top -->
-
-<button id="backTop">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<script src="script.js"></script>
-
-</body>
-</html>
