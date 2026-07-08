@@ -535,3 +535,24 @@ transform:translateY(-5px);
 /* ==========================
    AKHIR STYLE.CSS
 ========================== */
+
+h1,h2,h3,h4,h5,p{
+margin:0;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+button{
+font-family:inherit;
+}
+
+a{
+text-decoration:none;
+}
+
+body{
+padding-top:75px;
+}
